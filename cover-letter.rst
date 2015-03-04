@@ -1,0 +1,1 @@
+Cover letter describing, if any, your involvement with HOT, OSM or other humanitarian and open source projects (max 1 page).
