@@ -1,5 +1,12 @@
-Description
------------
+Proposal
+--------
+
+
+
+
+
+
+---
 
 Description of your proposed tech challenge solution (max 2 pages), explaining the technology and design of choice for implementing the catalog and the user interface. Please also include a brief description of strategies that you will employ to ensure project code sustainability (see section 8 below for more details);
 
