@@ -53,7 +53,11 @@ Contributions to GFOSS projects
 
 .. _Xolviewer: https://github.com/xolviewer
 
-* Minor contributions to other projects: Ol3-layerswitcher, UNIDATA Thredds, leaflet-virtual-grid, gvSIG CE, gvSIG Mini
+* Minor contributions to other projects: `Ol3-layerswitcher`_, `UNIDATA Thredds`_, `gvSIG CE`_
+
+.. _Ol3-layerswitcher: https://github.com/walkermatt/ol3-layerswitcher/graphs/contributors
+.. _gvSIG CE: http://sourceforge.net/p/gvsigce/_members/
+.. _UNIDATA Thredds: https://github.com/Unidata/thredds/graphs/contributors
 
 Other developments
 ------------------
