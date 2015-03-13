@@ -24,6 +24,18 @@ Co-founded the Galician GeoGeeks group `Xeoinquedos`_, collaborating to spread t
 .. _Xeoinquedos: http://xeoinquedos.eu
 .. _geoinquietos.org: http://geoinquietos.org/
 
+OpenStreetMap dynamizer:
+
+* Talking about `OSM with Xeoinquedos`_
+
+.. _OSM with Xeoinquedos: http://xeoinquedos.eu/osm-slides/
+
+* Mapping Party of Galpon `Free Saturdays`_
+
+.. _Free Saturdays: https://plus.google.com/u/0/events/cm0srt3i2g6l3a5bs5rspm2gsmk
+
+* Organizer of Night of the living maps in Vigo
+
 Co-founded the geomati.co GIS Freelance Network `geomati.co`_
 
 .. _geomati.co: http://geomati.co
@@ -37,7 +49,7 @@ Contributions to GFOSS projects
 
 .. _GeoWorkshops: https://github.com/geotalleres/geotalleres
 
-* XOLViewer: vitamins for OpenLayers, a OpenLayers framework based to develop web viewers quickly and modularly. `Xolviewer`_
+* XOLViewer: vitamins for OpenLayers, a OpenLayers framework based to develop web viewers quickly and modularly. `Xolviewer`_ ``[jQuery]``
 
 .. _Xolviewer: https://github.com/xolviewer
 
@@ -46,75 +58,33 @@ Contributions to GFOSS projects
 Other developments
 ------------------
 
-* ICOS Carbon Data Portal `Github Dataportal`_ 
+* `CIIFEN Geoportal`_ ``[Thredds, jQuery, Django, Bootstrap, PostGIS]``
+
+.. _CIIFEN Geoportal: http://geoportal.ciifen.org
+
+* ICOS Carbon Data Portal `Github Dataportal`_ ``[Thredds, extJS, geoExt, GeoNetwork, ISO19139 - 19115, Java]``
 
 .. _Github Dataportal: https://github.com/geomatico/dataportal
 
-* Mapa Literari Català `Web`_, `Android`_, `iOS`_
+* Mapa Literari Català `Web`_, `Android`_, `iOS`_ ``[jQuery, Backbone, Django, Cordova]``
 
 .. _Web: http://mapaliterari.cat
 .. _Android: https://play.google.com/store/apps/details?id=co.geomati.mapaliterari
 .. _iOS: https://itunes.apple.com/cn/app/mapa-literari-catala/id882530151?l=en&mt=8
 
-* `GeoPoster`_ 
+* `GeoPoster`_ ``[Flask, GeoAlchemy, Bootstrap, jQuery, PostGIS]``
 
 .. _GeoPoster: https://github.com/geomatico/geoposter
 
-* ikiMap Android
+* ikiMap Android ``[Android, Java]``
 
 
 Conference talks
 ----------------
 
+* http://www.osgeopt.pt/sites/default/files/files/_geoinquietos-SASIG2011-2.pdf
+* http://www.sigte.udg.edu/jornadassiglibre2014/uploads/2014/abstracts/r9.pdf
 * http://www.sigte.udg.edu/jornadassiglibre2010/uploads/Articles/a13.pdf
 * http://downloads.gvsig.org/download/events/gvSIG-Conference/7th-gvSIG-Conference/articles/Article-7j-Cliente_ikiMap.pdf
 * http://dugi-doc.udg.edu/handle/10256/4196
 * http://dugi-doc.udg.edu/handle/10256/7664
-
-Skills and Technology Requirements
-----------------------------------
-
-(1 poor - 10 high)
-
-* JavaScript:
-
-	* NodeJS, **3**
-	* jQuery, **8**
-	* LeafLet, **8** 
-	* OpenLayers, **9**
-	* OL3, **5** 
-	* GeoJSON, **8**
-
-* Python:
-	
-	* Flask, **6**
-	* Django, **7**
-	* pycsw, **1**
-	* Django Rest Framework, **6**
-	* GeoAlchemy, **7**
-
-* SQL Databases:
-
-	* SQLite, **7**
-	* PostgresSQL, PostGIS: **8**
-
-* OGC and ISO Standards:
-	
-	* OGC Standars (WMS, WFS, WCS): **8**
-	* ISO Standars (ISO 19139, ISO 19115): **8**
-
-* Open source catalog:
-	
-	* CKAN: **1**
-	* GeoNode: **1**
-	* GeoNetwork: **7**
-
-* HTML5, CSS, user interface design
-	
-	* HTML5: **7**
-	* CSS: **5**
-	* user interface design: **2**
-
-* Git and GitHub:
-	
-	Git and GitHub: **7**
