@@ -1,86 +1,98 @@
-Oscar Fonts Resume
-------------------
+Oscar Fonts
+===========
 
-Geospatial Developer with 10 years of experience.
+Bio
+---
 
-Attended FOSS4G in Victoria (2007) and changed his life.
+Collecting (paper) topographic maps since childhood.
 
-Worked for the Catalan Official Mapping Agency (2006-2008), deployed their first (stable) WMS service and Tile Cache services (tilecache.org). Lead the development of their main web map application based on OpenLayers, and developped a geocoding API.
+Telecommunications Engineer and Master in Intelligent Systems.
 
-Afterwards established as an Open Source Geospatial freelance developer.
+Senior Geospatial Developer with 10 years of experience.
 
-OSGeo Spanish Chapter charter member since 2009.
+In 2007 attended the first `SIG Libre`_ spanish conference and `FOSS4G in Victoria`_, and changed his life.
 
-Co-organized the FOSS4G 2010 Barcelona conference (2010.foss4g.org).
+.. _SIG Libre: http://www.sigte.udg.edu/jornadassiglibre/
+.. _FOSS4G in Victoria: http://2007.foss4g.org/
 
-Is a Scientific Committee member in the "SIG Libre" conference (spanish FOSS4G). http://www.sigte.udg.edu/jornadassiglibre/organizacion/
+Worked for the `Catalan Official Mapping Agency`_ (2006-2008), helped stabilize their `raster WMS services`_ and deployed the first `Tile Cache`_ services. Lead the development of their main `web map viewer`_ based on `OpenLayers 2`_, and developed their official `geocoding service`_.
 
-Co-founded the Barcelona GeoGeeks group (geoinquiets.cat), starting the "geoinquietos" movement that extended to other spanish and latin american cities (http://geogeeks.org/).
+.. _Catalan Official Mapping Agency: gttp://www.icc.cat
+.. _raster WMs services: http://shagrat.icc.cat/lizardtech/iserv/ows?REQUEST=GetCapabilities&SERVICE=WMS
+.. _Tile Cache: http://tilecache.org
+.. _web map viewer: http://dugi-doc.udg.edu/bitstream/handle/10256/1388/C19.pdf
+.. _OpenLayers 2: http://openlayers.org/two/
+.. _geocoding service: http://delta.icc.cat/idecwebservices/share/jsp/m_pont.jsp?ordre=suggest&maxresultats=25&metode=localitzaToponim&nom=barcelona
 
-Co-founded the geomati.co GIS Freelance Network (geomati.co).
+`OSGeo Spanish Chapter`_ charter member since 2009.
 
-Has been professor in UNIGIS Professiona Master in Geospatial Technologies (one of the exercises asked the students to map their own neighborhoods in OSM). 
+.. _OSGeo Spanish Chapter: http://es.osgeo.org/
 
+Established as `Freelance geospatial developer`_ in 2010.
 
+.. _Freelance geospatial developer: http://fonts.cat/
 
-Contributions to GFOSS projects
--------------------------------
+`Co-organized`_ the `FOSS4G 2010 Barcelona`_ conference.
 
-* GeoNetwork: OpenSearch interface improvements -- incorporated "geo" extension (aka filtering by bbox) http://trac.osgeo.org/geonetwork/ticket/190
+.. _Co-organized: http://2010.foss4g.org/organization.php.html
+.. _FOSS4G 2010 Barcelona: http://2010.foss4g.org
 
-* CatalogConnector: Added KML, Atom and GeoRSS response formats, and OpenSearch-geo interface. CatalogConnector launches distributed queries to a collection of CSW catalogs, and displays all the results in a single view -- distributed searches as opposed to harvesting (http://sourceforge.net/p/catalogconnecto/code/HEAD/tree/src/org/idec/catalog/) http://www.geoportal-idec.cat/geoportal/catalogconnector/OpenSearchCatalogConnectorManual.pdf
+Is a `Scientific Committee`_ member in the `SIG Libre`_ conference. 
 
-* GeoTools and GeoServer: Incorporated NTv2 Grid Shift and Custom (user-defined) coordinate transforms.
-
-* Geotalleres: Contributed base GeoServer documentation. Geotalleres is a creative commons collectively built documentation project for Spanish training on Geospatial FOSS. https://github.com/geotalleres/geotalleres 
-
-* Minor contributions to other projects: 52n SOS server, OpenTripPlanner, web2py.
-
-* OpenLayers 2: OpenSearch-geo test client. Not merged on Trunk, lives in a (stale) sandbox: http://dev.openlayers.org/sandbox/oscar.fonts/opensearch/lib/
-
-
-Other developments
-------------------
-
-
-* ICOS Carbon Data Portal
-
-* Mapa Literari Català
-
-* GeoPoster
-
-* Sensor Widgets
-
-* TerrainService
+..Scientific Committee: http://www.sigte.udg.edu/jornadassiglibre/organizacion/
 
 
-Conference talks
-----------------
+Co-founded the `Geoinquiets Barcelona`_, the first local `GeoGeeks`_ group that quickly expanded to other spanish and latin american cities.
 
+..Geoinquiets Barcelona: http://geoinquiets.cat
+..GeoGeeks: http://geogeeks.org
+..
 
-http://2010.foss4g.org/presentations/4767.pdf
+Co-founded the `geomati.co`_ GIS Freelance Network.
 
-...
+..geomati.co: http://geomati.co
+
+Has been professor at UNIGIS Professiona Master in Geospatial Technologies.
+
+Has been a consultant at the United Nations REDD program, providing training and technical advice on the use of Open Source Geospatial technologies for Forest Monitoring System deployment in developing countries: http://www.nfms4redd.org/doc/
 
 
 
+Code contributions to Open Source Geospatial projects
+-----------------------------------------------------
 
-Resume with links to your GitHub account or other open source projects you publicly contributed to (max 2 pages);
+* `GeoNetwork`_: Improved OpenSearch-geo interface. Ticket & patch: http://trac.osgeo.org/geonetwork/ticket/190
 
-6. Skills and Technology Requirements
+.. _GeoNetwork: http://geonetwork-opensource.org/
 
-The selected candidate must have experience in open source software development and working with a community of volunteering contributors. Knowledge and proficiency with the following technologies are preferred:
 
-JavaScript: NodeJS, jQuery, LeafLet, OpenLayers, GeoJSON
+* `GeoTools`_ and `GeoServer`_: Incorporated NTv2 Grid Shift and Custom (user-defined) coordinate transforms. The contribution in GeoServer's user manual: http://docs.geoserver.org/latest/en/user/advanced/crshandling/coordtransforms.html The GeoTools technical 'making of': http://geomati.co/icc_datumshift/geotools.html
 
-Python: Flask, Django, pycsw
+.. _GeoTools: http://geotools.org/
+.. _GeoServer: http://geoserver.org/
 
-SQL databases: SQLite, PostgreSQL
 
-OGC and ISO geospatial standards
+* `CatalogConnector`: Added KML, Atom and GeoRSS response formats; added OpenSearch-geo interface. CatalogConnector launches distributed CSW queries to a collection of remote catalogs, and displays all the responses in an integrated view: real-time distributed search as opposed to massive copy-pasting (harvesting). Documentation on my contribution: http://www.geoportal-idec.cat/geoportal/catalogconnector/OpenSearchCatalogConnectorManual.pdf
 
-Open source catalog technology such as CKAN and Geonode
+.. _CatalogConnector: http://sourceforge.net/p/catalogconnecto/code/HEAD/tree/src/org/idec/catalog/
 
-Web: HTML5, CSS, user interface design
 
-Git and GitHub
+* `Sensor Widgets`_ Visual components for SOS sensor data visualization. Own project.
+
+.. _Sensor Widgets: http://sensors.fonts.cat/examples/
+
+
+* Other minor patches / pull requests: `52n SOS`_ server, `OpenTripPlanner`_, `web2py`_, `OpenLayers 2 sandbox`_
+
+.. _52n SOS: https://wiki.52north.org/bin/view/SensorWeb/SensorObservationServiceIVDocumentation
+.. _OpenTripPlanner: https://github.com/opentripplanner/OpenTripPlanner/pull/1613
+.. _web2py: https://github.com/web2py/web2py/blob/master/scripts/extract_oracle_models.py#L20
+.. _OpenLayers 2 sandbox: OpenSearch-geo test client: http://dev.openlayers.org/sandbox/oscar.fonts/opensearch/lib/
+
+
+GitHub Repos
+------------
+
+https://github.com/oscarfonts?tab=repositories
+https://github.com/geomatico
+https://github.com/geodata
