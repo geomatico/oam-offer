@@ -39,18 +39,17 @@ Established as `Freelance geospatial developer`_ in 2010.
 
 Is a `Scientific Committee`_ member in the `SIG Libre`_ conference. 
 
-..Scientific Committee: http://www.sigte.udg.edu/jornadassiglibre/organizacion/
+.. _Scientific Committee: http://www.sigte.udg.edu/jornadassiglibre/organizacion/
 
 
 Co-founded the `Geoinquiets Barcelona`_, the first local `GeoGeeks`_ group that quickly expanded to other spanish and latin american cities.
 
-..Geoinquiets Barcelona: http://geoinquiets.cat
-..GeoGeeks: http://geogeeks.org
-..
+.. _Geoinquiets Barcelona: http://geoinquiets.cat
+.. _GeoGeeks: http://geogeeks.org
 
 Co-founded the `geomati.co`_ GIS Freelance Network.
 
-..geomati.co: http://geomati.co
+.. _geomati.co: http://geomati.co
 
 Has been professor at UNIGIS Professiona Master in Geospatial Technologies.
 
