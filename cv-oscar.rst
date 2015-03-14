@@ -4,8 +4,6 @@ Oscar Fonts
 Bio
 ---
 
-Collecting (paper) topographic maps since childhood.
-
 Telecommunications Engineer and Master in Intelligent Systems.
 
 Senior Geospatial Developer with 10 years of experience.
@@ -92,6 +90,6 @@ Code contributions to Open Source Geospatial projects
 GitHub Repos
 ------------
 
-https://github.com/oscarfonts?tab=repositories
-https://github.com/geomatico
-https://github.com/geodata
+* https://github.com/oscarfonts?tab=repositories
+* https://github.com/geomatico
+* https://github.com/geodata
