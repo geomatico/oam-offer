@@ -1,69 +1,42 @@
 Technical Proposal
 ==================
 
-We could go for the mature Open Source Geospatial Catalog implementation: GeoNetwork. With some Lucene indexing tweaks it can be adapted to specific search needs. We have `done it in the past <http://geomati.co/dataportal/search-service.html#configuracion-de-gn-para-busqueda-por-variables>`_.
+`We have done this <http://geomati.co/dataportal/search-service.html#configuracion-de-gn-para-busqueda-por-variables>`_` in the past, using GeoNetwork plus Lucene indexing tweaks to adapt it to specific search needs. It's a powerful technical setup, on the paper.
 
-But we would first bet for the recently graduated PyCSW project backed by SQLite. Start as simple as possible, and increase complexity only if/when neeed.
+But this time we would like to start with something simpler and as lightweight as possible: PyCSW on top of SQLite. We ensure a low entry barrier for both deployers and future maintainers: Less hardware requirements, less code lines to maintain. We can then introduce more advanced components as real needs demand it. For example, the centralized online catalog may switch to PostGIS instead of SQLite if the catalog grows to hundreds of thousands of records, while the "take away" versions could keep the database-in-a-file SQLite benefits.
 
-Tasks:
+The web client will query the catalog through the standard CSW protocol. No custom query API. Using a standard protocol decouples server from client implementations, and ensures reusability and interchangeability on both sides. Not RESTful, but standard. We shouldn't be scared of CSW because of the monstruosity of the ISO metadata model, or some not-so-usable catalog instances out there. The protocol is just a standard HTTP API.
 
-#. Generate some sample metadata records for testing, following the proposed `OAM metadata model <https://github.com/hotosm/OpenAerialMap/wiki/Metadata>`_. Probably this exercise will help refine the model proposal.
-#. Deploy a PyCSW instance incorporating the sample records.
-#. Deploy a first viewer such as the `PyCSW viewer demo <http://demo.pycsw.org/viewer/index.html>`_.
+.. image:: architecture.svg
+   :width: 50 %
+   :alt: Proposed architecture
+   :align: center
 
-No puedo...
+We would start by validating the `OAM metadata model proposal <https://github.com/hotosm/OpenAerialMap/wiki/Metadata>`_, writing some reference metadata records based on real sample datasets. This will raise some questions and will let us refine the model, trying again to keep it as simple as possible: gather only the relevant metadata for our use cases. Then we can configure PyCSW to use the OAM metadata model, and load the reference records.
 
----
-
-Description of your proposed tech challenge solution (max 2 pages), explaining the technology and design of choice for implementing the catalog and the user interface. Please also include a brief description of strategies that you will employ to ensure project code sustainability (see section 8 below for more details);
-
-3. Scope of Work
-
-The scope of work (SoW) for this challenge is to build the OAM catalog and integrate it with other OAM components. The selected candidates shall perform the following tasks:
-
-Review existing open source catalog solutions and identify code that can be reused and adapted for developing the OAM catalog.
-Implement the OAM API for communication between project components
-Design and develop the system by integrating a backend database, a fast lightweight catalog, and a graphical Web user interface for searching and displaying imagery datasets 
-Develop “potentially-shippable” versions of the OAM Catalog every month
-Participate in the integration of the OAM Catalog with the OAM Server
-Create comprehensive and clear documentation for code and API
-Implement testing, metrics, and code sustainability strategies
-Development will employ agile methods such as scrum, with iterative and incremental working product releases. The selected candidates will interact with the OAM community, integrating contributions by volunteer coders and participating in monthly code sprints. The OAM project manager will seek feedback from OAM users, organize and prioritize issues for developers to work on during each sprint.
-
-Key requirements to be considered in developing the OAM Catalog are:
-
-Maximum effort to reuse code and integrate with existing open source projects
-Lightweight with small footprint even if installed on portable hardware (e.g. i5/i7 laptop)
-Limited and focused to handling raster imagery data, with an effort to reduce overhead from features of reused code that are not needed for OAM
-Self-contained, portable, with simple installation steps (e.g. through deployment with software containers or by virtualization) for compatibility with multiple operating systems
-Developed using interoperable and modern programming languages
-Scalable, to support increased workload of peak request periods (e.g. during a disaster emergency) and able to quickly replicate across multiple instances.
-
-4. Deliverables
-
-Code and documentation will be created and hosted in GitHub in a HOT organization repository. Two major releases of the OAM Catalog are expected during the contract:
-
-OAM Catalog V1: released by the end of the second month, it will include a functional prototype with a well documented API, connecting to local metadata and imagery sources, and a complete Web user interface.
-
-OAM Catalog V2: released by the end of the fourth month, it will include complete integration with other OAM components, ability to connect with any imagery tile service and other OAM nodes, packaged installers, tested scalable architecture, and complete documentation.
-
-8. Project Sustainability
-
-One important objective of this tech challenge is to create a final product that is well documented and coded according to best practices standards. We prefer technology and software that have large developer pools in the open source community. We invite candidates to review current HOT projects on GitHub and get familiar with technology already used, in order to maximize support by the community and make it easier for other volunteers to contribute. It is important that once this tech challenge contract ends, the HOT community is able to continue supporting and developing the project.
+The web client will have:
+* Search by text
+* Filter by BBOX
+* Filter by time range
+* Paged results
+* Footprint preview
+* Data preview (for WMS or TMS services)
 
 
-References
-----------
+The web client will use the Javascript libraries and tools that helped us keep the code tidy in our past projects: RequireJS for modular development, Bootstrap for UI goodness, Grunt (maybe Gulp) for task automation, Bower for dependency management, Jasmine for tests. We can adapt to other toolsets used by the HOT developer community, but will avoid using intrusive frameworks or immature tools that condition our future flexibility or sustainability just because they are the last trendy tool (Javascript is a wild world). For instance, developing an AngularJS directive would feel like digging our own vendor lock-in trap.
 
-The Request:
-http://hot.openstreetmap.org/get_involved/openaerialmap_catalog_tech_challenge
+A less clear area (because we never did it) is how to wrap Catalog instances in a "take away" package that can be deployed on emergency scenarios. But there are some Windows "Portable Python" projects, and we can pack all the python dependencies in a virtual environment. So there is a good chance we can make an USB-stick distributable without a need for an installer or the overhead of a Virtual Machine. That would be our first bet.
 
-Some Info:
-http://hotosm.github.io/OpenAerialMap/oam-components/oam-c/
+OAM API development and integration with other OAM components (namely, the data server(s)) depends heavily on third parties and we don't have enough information to make a detailed proposal. We will use a well established Python web framework to build the api (preferably Django, could be Pyramid, would avoid weaker Flask).
 
-Discussion:
-https://github.com/hotosm/OpenAerialMap/issues
-https://groups.google.com/a/hotosm.org/forum/#!forum/openaerialmap
+We propose to create a specific "OAM-Catalog" public GitHub repo belonging to hotosm organization, using the Wiki pages for proposals, the issues for specific tasks, and these first-level directories:
 
-The old discontinued OAM project:
-https://github.com/oam/oam
+* "docs": The OAM-Catalog technical documentation, based on Sphinx ReStructuredText (could be rendered out to readthedocs.org).
+* "OAM-C-service": The python service, including PyCSW as a submdule.
+* "OAM-C-viewer": Search & Preview web interface.
+
+And of course a gh-pages branch to setup a landing page with links to source code, documentation, distributables, maybe some tutorial materials, and contact info.
+
+Any potential improvement to the CSW service should be commited to (or pull-requested to) the upstream official PyCSW repo.
+
+Regarding communication, we propose to have a weekly meeting with the OAM Project Manager to keep in sync, quickly iterate over the ongoing tasks and take decisions. Having direct occasional contact with real users and their needs would be also very helpful.
