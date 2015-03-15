@@ -17,7 +17,7 @@ Built on existing Open Source products (Thredds, GeoNetwork, Lucene, OpenLayers,
 
 Developed by Micho Garcia, Oscar Fonts and Fernando Gonzalez at geomati.co. Presented at various FOSS4G european conferences (Spain, Netherlands, UK):
 
-* Slides: http://www.slideshare.net/oscarfonts/icos-carbon-data-portal
+* Article and Slides: http://dugi-doc.udg.edu/handle/10256/4196
 * Demo video: https://vimeo.com/44806500
 * GitHub repo: https://github.com/geomatico/dataportal
 * Documentation (spanish): http://geomati.co/dataportal/
@@ -26,9 +26,9 @@ Developed by Micho Garcia, Oscar Fonts and Fernando Gonzalez at geomati.co. Pres
 Geotalleres
 ^^^^^^^^^^^
 
-`Geotalleres`_ is a compilation of reusable spanish language workshop materials for Open Source Geospatial training. It's a collective creative-commons knowledge base. Micho and Oscar contributed various initial PostGIS and GeoServer chapters.
+Geotalleres is a compilation of reusable spanish language workshop materials for Open Source Geospatial training. It's a collective creative-commons knowledge base. Micho and Oscar contributed various initial PostGIS and GeoServer chapters.
 
-.. _Geotalleres: https://github.com/geotalleres/geotalleres
+* GitHub repo: https://github.com/geotalleres/geotalleres
 
 
 SatAgro
@@ -38,17 +38,16 @@ A Satellite Information Service for farmers. Including:
 
 #. Backend scripts to extract significative indicators for farmers (timeseries and time-dependant raster layers) out of free MODIS and Landsat imagery. Mainly via `Python GDAL`_ scripting and `OpenForis`_.
 #. Automatic raster data publishing in GeoServer through REST API, using `gsconfig` python client.
-#. A `browsable REST API`_ (login as demo/demo) using `Django Rest Framework`_.
-#. A `web application`_ structured with Backbone and RequireJS, and using Bootstrap, Leaflet and Highcharts.
+#. A browsable REST API using `Django Rest Framework`_.
+#. A web application structured with Backbone and RequireJS, and using Bootstrap, Leaflet and Highcharts.
 
-Still in beta, not production ready.
+* Demo site (dev version, not production ready): https://dev.satagro.pl
 
 .. _Python GDAL: http://gdal.org/python/
 .. _OpenForis: http://www.openforis.org/
 .. _gsconfig: https://github.com/boundlessgeo/gsconfig
-.. _browsable REST API: https://dev.satagro.pl/api/
 .. _Django Rest Framework: http://www.django-rest-framework.org/
-.. _web application: https://dev.satagro.pl
+
 
 
 GeoPoster
@@ -71,8 +70,8 @@ Mapa Literari Català
 
 Not a techically complex application, but a very popular one. Links literature and territory, proposing different routes related to classical witers' texts.
 
-Oscar optimized the `Web`_ application, separating the UI from the Data Acces, and replacing Google Maps with Leaflet. Django + PostgreSQL in the server, jQuery and Leaflet the browser. Micho developed the `Android`_ and `iOS`_ mobile versions using Cordova (formerly PhoneGap).
+Oscar optimized the web application, separating the UI from the Data Acces, and replacing Google Maps with Leaflet. Django + PostgreSQL in the server, jQuery and Leaflet the browser. Micho developed the `Android app`_ and `iOS app`_ using Cordova for multiplatform development.
 
 .. _Web: http://mapaliterari.cat
-.. _Android: https://play.google.com/store/apps/details?id=co.geomati.mapaliterari
-.. _iOS: https://itunes.apple.com/cn/app/mapa-literari-catala/id882530151?l=en&mt=8
+.. _Android app: https://play.google.com/store/apps/details?id=co.geomati.mapaliterari
+.. _iOS app: https://itunes.apple.com/cn/app/mapa-literari-catala/id882530151?l=en&mt=8

@@ -1,13 +1,17 @@
 Technical Proposal
 ==================
 
-`We have done this <http://geomati.co/dataportal/search-service.html#configuracion-de-gn-para-busqueda-por-variables>`_` in the past, using GeoNetwork plus Lucene indexing tweaks to adapt it to specific search needs. It's a powerful technical setup, on the paper.
+`We have done something similar <http://geomati.co/dataportal/search-service.html#configuracion-de-gn-para-busqueda-por-variables>`_ before, using GeoNetwork plus Lucene indexing tweaks to adapt it to specific search needs. It's a powerful technical setup, on the paper.
 
 But this time we would like to start with something simpler and as lightweight as possible: PyCSW on top of SQLite. We ensure a low entry barrier for both deployers and future maintainers: Less hardware requirements, less code lines to maintain. We can then introduce more advanced components as real needs demand it. For example, the centralized online catalog may switch to PostGIS instead of SQLite if the catalog grows to hundreds of thousands of records, while the "take away" versions could keep the database-in-a-file SQLite benefits.
 
 The web client will query the catalog through the standard CSW protocol. No custom query API. Using a standard protocol decouples server from client implementations, and ensures reusability and interchangeability on both sides. Not RESTful, but standard. We shouldn't be scared of CSW because of the monstruosity of the ISO metadata model, or some not-so-usable catalog instances out there. The protocol is just a standard HTTP API.
 
 .. figure:: architecture.png
+   :target: architecture.png 
+   :scale: 75 %
+   :align: center
+
 
 We would start by validating the `OAM metadata model proposal <https://github.com/hotosm/OpenAerialMap/wiki/Metadata>`_, writing some reference metadata records based on real sample datasets. This will raise some questions and will let us refine the model, trying again to keep it as simple as possible: gather only the relevant metadata for our use cases. Then we can configure PyCSW to use the OAM metadata model, and load the reference records.
 

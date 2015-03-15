@@ -189,14 +189,14 @@ latex_elements = {
 #'pointsize': '10pt',
 
 # Additional stuff for the LaTeX preamble.
-#'preamble': '',
+'preamble': '\setcounter{tocdepth}{0}',
 }
 
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  ('index', 'OAMCatalogTechChallengeProposal.tex', u'OAM Catalog Tech Challenge Proposal Documentation',
+  ('index', 'OAMCatalogTechChallengeProposal.tex', u'OAM Catalog Tech Challenge Proposal',
    u'Micho Garcia, Oscar Fonts', 'howto'),
 ]
 
@@ -226,7 +226,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'oamcatalogtechchallengeproposal', u'OAM Catalog Tech Challenge Proposal Documentation',
+    ('index', 'oamcatalogtechchallengeproposal', u'OAM Catalog Tech Challenge Proposal',
      [u'Micho Garcia, Oscar Fonts'], 1)
 ]
 
@@ -240,7 +240,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'OAMCatalogTechChallengeProposal', u'OAM Catalog Tech Challenge Proposal Documentation',
+  ('index', 'OAMCatalogTechChallengeProposal', u'OAM Catalog Tech Challenge Proposal',
    u'Micho Garcia, Oscar Fonts', 'OAMCatalogTechChallengeProposal', 'One line description of project.',
    'Miscellaneous'),
 ]

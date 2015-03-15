@@ -1,10 +1,8 @@
 OAM Catalog Tech Challenge Proposal
 ===================================
 
-Contents:
-
 .. toctree::
-   :maxdepth: 2
+   :hidden:
 
    cover-letter
    cv-micho

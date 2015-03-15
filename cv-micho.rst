@@ -82,5 +82,4 @@ Conference talks
 * http://www.sigte.udg.edu/jornadassiglibre2014/uploads/2014/abstracts/r9.pdf
 * http://www.sigte.udg.edu/jornadassiglibre2010/uploads/Articles/a13.pdf
 * http://downloads.gvsig.org/download/events/gvSIG-Conference/7th-gvSIG-Conference/articles/Article-7j-Cliente_ikiMap.pdf
-* http://dugi-doc.udg.edu/handle/10256/4196
 * http://dugi-doc.udg.edu/handle/10256/7664

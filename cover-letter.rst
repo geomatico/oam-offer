@@ -1,3 +1,6 @@
+Cover Letter
+============
+
 Dear OpenAerialMap team,
 
 We are Micho Garcia and Oscar Fonts, two freelance Open Source Geospatial developers and active dynamizers in the the Spanish Open Source Geospatial communities. We are charter members in the OSGeo Spanish chapter, started our local "Geoinquietos" (GeoGeeks) groups in our respective places (Galicia and Barcelona), and usually sponsor and organize spanish FOSS4G events (GeoCamp unconferences, annual SIG Libre conference).
@@ -8,4 +11,6 @@ We work mainly as integrators of different components to build custom geospatial
 
 But we lately tend to use Python to build our custom APIs (Django, Flask, web2py), while the "web application" tends to be 100% Javascript in the browser, or Android, so it is independent from the server technology. Of course it helps a lot to have standard web services and client implementations.
 
-Experience told us that developing software is hard, but mantaining it is even harder. So with te time we tend to think much more on lowering the barrier to future change: flexibility and understandability, and have in mind the future mantainers (could be ourselves!). Using a too modern tool, with an unmature "ecosystem" around, can be counterproductive as well (for instance, developing Angular directives feels like digging a hole into vendor lock-in).
+Experience told us that developing software is hard, but mantaining it is even harder. So with te time we tend to think much more on lowering the barrier to future change: flexibility and understandability, and have in mind the future mantainers (could be ourselves!).
+
+When we came across this challenge call, we felt like it fitted us like a glove: two part-time Open Source Geospatial experienced developers for an Open Data initiative used in Humanitarian response... Wow! We just hope that our technical skills are appealing enough for you, and, either way, we are happy to see OAM project back alive!
