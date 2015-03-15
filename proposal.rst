@@ -1,10 +1,17 @@
-Proposal
---------
+Technical Proposal
+==================
 
+We could go for the mature Open Source Geospatial Catalog implementation: GeoNetwork. With some Lucene indexing tweaks it can be adapted to specific search needs. We have `done it in the past <http://geomati.co/dataportal/search-service.html#configuracion-de-gn-para-busqueda-por-variables>`_.
 
+But we would first bet for the recently graduated PyCSW project backed by SQLite. Start as simple as possible, and increase complexity only if/when neeed.
 
+Tasks:
 
+#. Generate some sample metadata records for testing, following the proposed `OAM metadata model <https://github.com/hotosm/OpenAerialMap/wiki/Metadata>`_. Probably this exercise will help refine the model proposal.
+#. Deploy a PyCSW instance incorporating the sample records.
+#. Deploy a first viewer such as the `PyCSW viewer demo <http://demo.pycsw.org/viewer/index.html>`_.
 
+No puedo...
 
 ---
 
