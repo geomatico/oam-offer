@@ -15,6 +15,7 @@ The web client will query the catalog through the standard CSW protocol. No cust
 We would start by validating the `OAM metadata model proposal <https://github.com/hotosm/OpenAerialMap/wiki/Metadata>`_, writing some reference metadata records based on real sample datasets. This will raise some questions and will let us refine the model, trying again to keep it as simple as possible: gather only the relevant metadata for our use cases. Then we can configure PyCSW to use the OAM metadata model, and load the reference records.
 
 The web client will have:
+
 * Search by text
 * Filter by BBOX
 * Filter by time range
