@@ -7,10 +7,7 @@ But this time we would like to start with something simpler and as lightweight a
 
 The web client will query the catalog through the standard CSW protocol. No custom query API. Using a standard protocol decouples server from client implementations, and ensures reusability and interchangeability on both sides. Not RESTful, but standard. We shouldn't be scared of CSW because of the monstruosity of the ISO metadata model, or some not-so-usable catalog instances out there. The protocol is just a standard HTTP API.
 
-.. image:: architecture.svg
-   :width: 50 %
-   :alt: Proposed architecture
-   :align: center
+.. figure:: architecture.png
 
 We would start by validating the `OAM metadata model proposal <https://github.com/hotosm/OpenAerialMap/wiki/Metadata>`_, writing some reference metadata records based on real sample datasets. This will raise some questions and will let us refine the model, trying again to keep it as simple as possible: gather only the relevant metadata for our use cases. Then we can configure PyCSW to use the OAM metadata model, and load the reference records.
 

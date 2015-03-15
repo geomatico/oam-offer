@@ -9,5 +9,3 @@ We work mainly as integrators of different components to build custom geospatial
 But we lately tend to use Python to build our custom APIs (Django, Flask, web2py), while the "web application" tends to be 100% Javascript in the browser, or Android, so it is independent from the server technology. Of course it helps a lot to have standard web services and client implementations.
 
 Experience told us that developing software is hard, but mantaining it is even harder. So with te time we tend to think much more on lowering the barrier to future change: flexibility and understandability, and have in mind the future mantainers (could be ourselves!). Using a too modern tool, with an unmature "ecosystem" around, can be counterproductive as well (for instance, developing Angular directives feels like digging a hole into vendor lock-in).
-
-We witnessed the first OpenAerialMap attempt, and we are very excited to see that it is coming back to live in a better shape. It would be an honour to participate in its conception. We feel that this project fits our working style like a glove, and hope to be qualified enough to join your team.
